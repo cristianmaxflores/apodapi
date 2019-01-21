@@ -1,0 +1,75 @@
+@import './variables.scss';
+
+.App {
+  text-align: center;
+  font: 15px verdana , sans-serif;
+}
+
+html { 
+  background: url("bw.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.m-top{
+  margin-top: 10px;
+}
+
+.apod-container {
+  font: 15px verdana , sans-serif;
+  text-align: center;
+  max-width:75%;
+  margin: auto;
+  border: 2px solid #ffffff;
+  background: $primary-color;
+}
+.date-picker {
+  margin: 5px;
+  border: 1px solid #ffffff;
+  background: $secondary-color;
+}
+
+.img_loading {
+  animation: App-logo-spin infinite 5s linear;
+  width: 500px;
+  height: 500px;
+}
+
+.App-header {
+  background-color: $primary-color;
+  //background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.btn {
+  font-size: 20px;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background: rgb(0, 217, 255);
+  border: none;
+&:hover {
+    background: rgb(176, 246, 255);
+  }
+}
+
+.text{
+  color: $text-color
+}
